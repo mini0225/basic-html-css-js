@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1{
+
+      position : relative; /*지우면 top / left 와 같은 위치 지정이 안먹힘.*/
+      top: 100px;
+      left: 100px;
+
+      width: 200px;
+      height: 200px;
+
+      background-color: red;
+    }
+    .box2{
+
+      position : relative;
+      top: 200px; /*box1영역에서 부터 200px떨어짐*/
+      left: 100px;
+
+      width: 200px;
+      height: 200px;
+
+      background-color: red;
+    }
+    .box3{
+
+      position : absolute; /*relative로 지정된 부모요소 안에서 써야함.*/
+      top: 50px; /*box1영역에서 부터 200px떨어짐*/
+      left: 100px;
+
+      width: 50px;
+      height: 50px;
+
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box3"></div>
+
+  </div>
+  <div class="box2"></div>
+</body>
+</html>

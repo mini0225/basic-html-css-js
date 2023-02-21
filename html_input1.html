@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="">
+    <input type="text" value="ㅎㅇㅎㅇ"> 
+    <input type="password"> <!--*표기됨.-->
+    <input type="email"> <!--이메일 양식 지켜야함-->
+    <input type="tel">
+    <input type="search"> <!--x표시 나옴-->
+    <input type="number" max="10" min="0">
+    <input type="range" max="10" min="0">
+  </form>
+  
+  <form action=""><!--여러개선택가능-->
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+  </form>
+  
+  <form action=""> <!--하나만 선택가능-->
+    <input type="radio" name="job" id="input-job1"><label for="input-job1">학생</label> <!--id속성과 for속성이 같으면 가능-->
+    <input type="radio" name="job" id="input-job2"><label for="input-job2">교직원</label> <!--radio는 name끼리 묶임, name다르면 동시체크 가능-->
+    <input type="radio" name="job2" id="input-job3"><label for="input-job3">사무직</label>
+    <input type="radio" name="job2" id="input-job4"><label for="input-job4">무직</label>
+    <input type="file" multiple accept=".gif, .jpg, .png"> <!--multiple 속성 추가시여러개 선택가능 // accept 추가시 확장자 제한 가능.-->
+    <input type="hidden" name="username" value="min">
+  </form>
+
+</body>
+</html>  

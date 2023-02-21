@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      display: flex;
+      /*justify-content : 주축(가로)방향
+        align-items : 교차축(세로)방향*/
+      /* justify-content: space-between; 양끝에 붙이고 안쪽에 동일한 공간 */
+      justify-content: space-around; /*동일하게 띄워라*/
+      align-items: center;
+
+      margin :0px auto;
+      width: 1000px;
+      height: 500px;
+
+      background-color: red;
+
+    }
+    .box{
+
+      width: 150px;
+      height: 150px;
+
+      background-color: black;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+  </div>
+  
+</body>
+</html>

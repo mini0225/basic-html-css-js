@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표1</title>
+  <style>
+    table{
+      border: 1px solid black;
+      width: 500px;
+      
+    }
+    th, td{ 
+      border: 1px solid black;
+      
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1></h1>
+    <nav></nav>
+  </header>
+  <main>
+    <!-- <article>
+      <section>
+        <h2></h2>
+        <p></p>
+      </section>
+    </article>
+    <article>
+      <section>
+        <h2></h2>
+        <p>
+          <ul>
+            <li></li>
+          </ul>
+          <ol>
+            <li></li>
+          </ol>
+          <dl>
+            <dd>
+              <dt></dt>
+            </dd>
+          </dl>
+        </p>
+      </section>
+    </article> -->
+    <table>
+
+      <caption>표 제목</caption>
+      <thead>
+        <!-- 표 목록 -->
+        <tr> <!---한 행-->
+          <th>구분</th><!--한 열, 글자가 두껍고 가운데 정렬이 되어있음-->
+          <th>1월</th>
+          <th>2월</th>
+          <th>3월</th>
+          <th>4월</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th rowspan="3">1</th> <!---행끼리 합쳐라-->
+          <td>2000000</td><!--왼쪽정렬, 기본글씨-->
+          <td>3000000</td>
+          <td>4000000</td>
+          <td>5000000</td>
+        </tr>
+      
+        <tr>
+          <!-- <th>2</th> -->
+          <td>2000000</td>
+          <td>3000000</td>
+          <td>4000000</td>
+          <td>5000000</td>
+        </tr>
+      
+        <tr>
+          <!-- <th>3</th> -->
+          <td>2000000</td>
+          <td>3000000</td>
+          <td>4000000</td>
+          <td>5000000</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th>합계</th>
+          <td colspan="4">140000000</td> <!---가로로 4칸 합쳐라-->
+          <!-- <td>3000000</td>
+          <td>4000000</td>
+          <td>5000000</td> -->
+        </tr>
+        </tr>
+      </tfoot>
+
+    </table>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
